@@ -1,0 +1,59 @@
+.header {
+  box-sizing: border-box;
+  height: 628px;
+  background-image: url(../img/Cover-photo-bc-mobile.png);
+  background-size: cover;
+  background-position-x: 85%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include onTablet {
+    background: center / cover no-repeat url(../img/header-bg-tablet.png);
+  }
+
+  @include onDesktop {
+    background: center / cover no-repeat url(../img/header-bg-desktop.png);
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding-bottom: 88px;
+
+    @include contentPaddingInline;
+    @include onTablet {
+      padding-bottom: 130px;
+    }
+
+    @include onDesktop {
+      @include onTablet {
+        padding-bottom: 203px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+
+    @include onTablet {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+      line-height: 64px;
+    }
+    }
+}
+

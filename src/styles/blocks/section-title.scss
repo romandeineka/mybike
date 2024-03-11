@@ -1,0 +1,29 @@
+.section-title {
+  margin: 0;
+
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin-bottom: 48px;
+
+  @include onTablet {
+    font-size: 48px;
+    line-height: 48px;
+
+    &__details {
+      margin-bottom: 64px;
+    }
+  }
+
+  @include onDesktop {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  &--align--left {
+    text-align: left;
+  }
+}
