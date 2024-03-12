@@ -1,5 +1,6 @@
 .details {
   margin-bottom: 80px;
+  margin: 0 auto;
   @include contentPaddingInline;
 
   @include onTablet {

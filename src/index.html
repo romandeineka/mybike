@@ -32,7 +32,7 @@
     </header>
 
     <aside class="menu page__menu" id="menu">
-      <div class="top-bar">
+      <div class="top-bar top-bar--menu">
         <a class="top-bar__logo" href="#">
           <img src="img/Property 1=Menu_logo.png" alt="MyBIKE logo">
         </a>
@@ -175,22 +175,24 @@
         <h2 class="section-title">Contact us</h2>
 
         <div class="contacts__wrap">
-          <form class="contacts__inputs">
+          <form onsubmit="this.reset(); return false;" class="contacts__inputs">
             <input
+              required
               class="contacts__input contacts__input--name"
               type="text"
               name="name"
               placeholder="Name"
             >
             <input
+              required
               class="contacts__input"
-              type="text"
+              type="email"
               name="email"
               placeholder="Email"
             >
             <textarea
               class="contacts__message"
-              type="text"
+              required
               name="message"
               placeholder="Message"></textarea>
 
@@ -204,7 +206,7 @@
             <p class="contacts__info--light">Email</p>
             <p class="contacts__info--bold">hello@miami.com</p>
             <p class="contacts__info--light">Address</p>
-            <p class="contacts__info--bold">400 first ave. <br> suite 700 <br> Minneapolis, MN 55401</p>
+            <a target="_blank"  class="contacts__info--bold" href="https://www.google.com/maps/dir//400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@44.9649225,-93.3465211,11.81z/data=!4m8!4m7!1m0!1m5!1m1!1s0x52b3328fdf233887:0x3348e5113ed2472d!2m2!1d-93.2731311!2d44.9813258?hl=uk-UK&entry=ttu">400 first ave. <br> suite 700 <br> Minneapolis, MN 55401</a>
           </div>
         </div>
 

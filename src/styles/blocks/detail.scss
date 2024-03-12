@@ -22,6 +22,8 @@
     width: 100%;
     object-fit: cover;
 
+    @include hover(scale, 1.1);
+
     &--wide {
       @include onTablet {
         grid-column: 1 / 5;

@@ -1,4 +1,6 @@
 .header {
+  @include contentPaddingInline;
+
   box-sizing: border-box;
   height: 628px;
   background-image: url(../img/Cover-photo-bc-mobile.png);
@@ -25,6 +27,7 @@
   &__bottom {
     text-align: center;
     padding-bottom: 88px;
+    margin: 0 auto;
 
     @include contentPaddingInline;
     @include onTablet {
@@ -44,6 +47,7 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -1.5px;
+    
 
     @include onTablet {
       font-size: 64px;
