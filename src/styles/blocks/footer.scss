@@ -5,6 +5,9 @@
   height: 200px;
   width: 100%;
   background-position-x: -111px;
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
 
   @include onTablet {
     height: 480px;
